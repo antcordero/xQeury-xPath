@@ -1,0 +1,46 @@
+base X no sirve para montar base de datos.
+Utilizamos xQuery como base de datos.
+
+Consultas de extracción de datos en BaseX, como los select en bases de datos 
+En vez de tablas de datos, usaremos documentos.
+
+Sobre xPath, es la base de xQuery, es la base. En consultas se pueden usar para xQuery y xPath.
+
+El objetivo es que devuelva elementos o atributos utilizando xQuery.
+
+las rutas a efectos prácticos funcionan como arrays, pero los array en xQuery no empiezan por 0, sino por 1.
+
+Ejemplo de consulta:
+
+**
+for $pokemon in /pokemones/pokemon
+where $pokemon/tipos/tipo="Grass"
+return $pokemon/nombre
+**
+
+$pokemon -> es una variable
+
+**
+for $pokemon in /pokemones/pokemon
+where $pokemon/tipos/tipo="Grass"
+order by $pokemon/@numero descending
+return $pokemon
+**
+
+
+xPath -> lenguaje de consultas para seleccionar nodos. Un nodo es todo lo que hay en documento xml. En las ruta siempre hay que empezar con una barra /, por ejemplo: /libro/titulo
+
+//elemento significa que de donde estoy devuelve todo del descendiente
+
+por ejemplo /libro//autor -> si tiene varios autores, o muchos capítulos y dentro de cada uno un autor, pues así los cogería todos.
+
+[] -> predicado, son condiciones en la consulta.
+por ejemplo -> //libro[@categoria="novela"] -> selecciona todos los libros independientemente desde donde estén pero con la condición solo devuelve los que son tipo novela. A partir de aquí, se puede continuar la consulta.
+
+Dos a la vez: //libro[@categoria="novela"][@idioma="español"]
+también funciona con and
+
+/pokemones/pokemon[/tipos/tipo="Grass"] o así
+//pokemon[/tipos/tipo="Grass"]
+
+en xquery si puede ir así //pokemon[//tipo="Grass"]

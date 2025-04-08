@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pokemones>
+  <pokemon numero="1">
+    <nombre>Bulbasaur</nombre>
+    <descripcion>Bulbasaur is a dual-type Grass/Poison Pokémon.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/bulbasaur.jpg" />
+    <tipos>
+      <tipo>Grass</tipo>
+      <tipo>Poison</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Tackle</ataque>
+      <ataque poder="45">Vine Whip</ataque>
+      <ataque poder="50">Take Down</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="2">
+    <nombre>Ivysaur</nombre>
+    <descripcion>Ivysaur is the evolved form of Bulbasaur.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/ivysaur.jpg" />
+    <tipos>
+      <tipo>Grass</tipo>
+      <tipo>Poison</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Tackle</ataque>
+      <ataque poder="45">Vine Whip</ataque>
+      <ataque poder="55">Razor Leaf</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="3">
+    <nombre>Venusaur</nombre>
+    <descripcion>Venusaur is the final evolution of Bulbasaur.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/venusaur.jpg" />
+    <tipos>
+      <tipo>Grass</tipo>
+      <tipo>Poison</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Tackle</ataque>
+      <ataque poder="45">Vine Whip</ataque>
+      <ataque poder="120">SolarBeam</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="4">
+    <nombre>Charmander</nombre>
+    <descripcion>Charmander is a Fire-type Pokémon.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/charmander.jpg" />
+    <tipos>
+      <tipo>Fire</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Scratch</ataque>
+      <ataque poder="40">Ember</ataque>
+      <ataque poder="90">Flamethrower</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="5">
+    <nombre>Charmeleon</nombre>
+    <descripcion>Charmeleon is the evolved form of Charmander.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/charmeleon.jpg" />
+    <tipos>
+      <tipo>Fire</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Scratch</ataque>
+      <ataque poder="40">Ember</ataque>
+      <ataque poder="90">Flamethrower</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="6">
+    <nombre>Charizard</nombre>
+    <descripcion>Charizard is the final evolution of Charmander.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/charizard.jpg" />
+    <tipos>
+      <tipo>Fire</tipo>
+      <tipo>Flying</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Scratch</ataque>
+      <ataque poder="90">Flamethrower</ataque>
+      <ataque poder="90">Fly</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="7">
+    <nombre>Squirtle</nombre>
+    <descripcion>Squirtle is a Water-type Pokémon.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/squirtle.jpg" />
+    <tipos>
+      <tipo>Water</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Tackle</ataque>
+      <ataque poder="40">Water Gun</ataque>
+      <ataque poder="110">Hydro Pump</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="8">
+    <nombre>Wartortle</nombre>
+    <descripcion>Wartortle is the evolved form of Squirtle.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/wartortle.jpg" />
+    <tipos>
+      <tipo>Water</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Tackle</ataque>
+      <ataque poder="40">Water Gun</ataque>
+      <ataque poder="110">Hydro Pump</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="9">
+    <nombre>Blastoise</nombre>
+    <descripcion>Blastoise is the final evolution of Squirtle.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/blastoise.jpg" />
+    <tipos>
+      <tipo>Water</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Tackle</ataque>
+      <ataque poder="40">Water Gun</ataque>
+      <ataque poder="150">Hydro Cannon</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="10">
+    <nombre>Caterpie</nombre>
+    <descripcion>Caterpie is a Bug-type Pokémon.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/caterpie.jpg" />
+    <tipos>
+      <tipo>Bug</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Tackle</ataque>
+      <ataque poder="0">String Shot</ataque>
+      <ataque poder="60">Bug Bite</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="11">
+    <nombre>Metapod</nombre>
+    <descripcion>Metapod is the evolved form of Caterpie.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/metapod.jpg" />
+    <tipos>
+      <tipo>Bug</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="0">Harden</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="12">
+    <nombre>Butterfree</nombre>
+    <descripcion>Butterfree is the final evolution of Caterpie.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/butterfree.jpg" />
+    <tipos>
+      <tipo>Bug</tipo>
+      <tipo>Flying</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Tackle</ataque>
+      <ataque poder="50">Confusion</ataque>
+      <ataque poder="90">Bug Buzz</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="13">
+    <nombre>Weedle</nombre>
+    <descripcion>Weedle is a Bug/Poison-type Pokémon.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/weedle.jpg" />
+    <tipos>
+      <tipo>Bug</tipo>
+      <tipo>Poison</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="15">Poison Sting</ataque>
+      <ataque poder="0">String Shot</ataque>
+      <ataque poder="60">Bug Bite</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="14">
+    <nombre>Kakuna</nombre>
+    <descripcion>Kakuna is the evolved form of Weedle.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/kakuna.jpg" />
+    <tipos>
+      <tipo>Bug</tipo>
+      <tipo>Poison</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="0">Harden</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="15">
+    <nombre>Beedrill</nombre>
+    <descripcion>Beedrill is the final evolution of Weedle.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/beedrill.jpg" />
+    <tipos>
+      <tipo>Bug</tipo>
+      <tipo>Poison</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Tackle</ataque>
+      <ataque poder="25">Twinneedle</ataque>
+      <ataque poder="90">Sludge Bomb</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="16">
+    <nombre>Pidgey</nombre>
+    <descripcion>Pidgey is a Normal/Flying-type Pokémon.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/pidgey.jpg" />
+    <tipos>
+      <tipo>Normal</tipo>
+      <tipo>Flying</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Tackle</ataque>
+      <ataque poder="40">Gust</ataque>
+      <ataque poder="40">Quick Attack</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="17">
+    <nombre>Pidgeotto</nombre>
+    <descripcion>Pidgeotto is the evolved form of Pidgey.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/pidgeotto.jpg" />
+    <tipos>
+      <tipo>Normal</tipo>
+      <tipo>Flying</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Tackle</ataque>
+      <ataque poder="40">Gust</ataque>
+      <ataque poder="40">Quick Attack</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="18">
+    <nombre>Pidgeot</nombre>
+    <descripcion>Pidgeot is the final evolution of Pidgey.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/pidgeot.jpg" />
+    <tipos>
+      <tipo>Normal</tipo>
+      <tipo>Flying</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Tackle</ataque>
+      <ataque poder="40">Gust</ataque>
+      <ataque poder="110">Hurricane</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="19">
+    <nombre>Rattata</nombre>
+    <descripcion>Rattata is a Normal-type Pokémon.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/rattata.jpg" />
+    <tipos>
+      <tipo>Normal</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Tackle</ataque>
+      <ataque poder="40">Quick Attack</ataque>
+      <ataque poder="80">Hyper Fang</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="20">
+    <nombre>Raticate</nombre>
+    <descripcion>Raticate is the evolved form of Rattata.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/raticate.jpg" />
+    <tipos>
+      <tipo>Normal</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Tackle</ataque>
+      <ataque poder="40">Quick Attack</ataque>
+      <ataque poder="80">Hyper Fang</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="21">
+    <nombre>Spearow</nombre>
+    <descripcion>Spearow is a Normal/Flying-type Pokémon.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/spearow.jpg" />
+    <tipos>
+      <tipo>Normal</tipo>
+      <tipo>Flying</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="35">Peck</ataque>
+      <ataque poder="0">Growl</ataque>
+      <ataque poder="80">Drill Peck</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="22">
+    <nombre>Fearow</nombre>
+    <descripcion>Fearow is the evolved form of Spearow.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/fearow.jpg" />
+    <tipos>
+      <tipo>Normal</tipo>
+      <tipo>Flying</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="35">Peck</ataque>
+      <ataque poder="0">Growl</ataque>
+      <ataque poder="80">Drill Peck</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="23">
+    <nombre>Ekans</nombre>
+    <descripcion>Ekans is a Poison-type Pokémon.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/ekans.jpg" />
+    <tipos>
+      <tipo>Poison</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="15">Wrap</ataque>
+      <ataque poder="15">Poison Sting</ataque>
+      <ataque poder="40">Acid</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="24">
+    <nombre>Arbok</nombre>
+    <descripcion>Arbok is the evolved form of Ekans.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/arbok.jpg" />
+    <tipos>
+      <tipo>Poison</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="15">Wrap</ataque>
+      <ataque poder="15">Poison Sting</ataque>
+      <ataque poder="40">Acid</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="25">
+    <nombre>Pikachu</nombre>
+    <descripcion>Pikachu is an Electric-type Pokémon.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/pikachu.jpg" />
+    <tipos>
+      <tipo>Electric</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Thunder Shock</ataque>
+      <ataque poder="40">Quick Attack</ataque>
+      <ataque poder="90">Thunderbolt</ataque>
+    </ataques>
+  </pokemon>
+  <pokemon numero="26">
+    <nombre>Raichu</nombre>
+    <descripcion>Raichu is the evolved form of Pikachu.</descripcion>
+    <imagen url="https://img.pokemondb.net/artwork/large/raichu.jpg" />
+    <tipos>
+      <tipo>Electric</tipo>
+    </tipos>
+    <ataques>
+      <ataque poder="40">Thunder Shock</ataque>
+      <ataque poder="40">Quick Attack</ataque>
+      <ataque poder="90">Thunderbolt</ataque>
+    </ataques>
+  </pokemon>
+</pokemones>
