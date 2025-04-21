@@ -160,3 +160,38 @@ where $atigüedad > 50
 let $nombre := $a/description
 return data($nombre)
 
+
+for $a in //arcade
+let $atigüedad := 2025 - number($a/year)
+where $atigüedad > 50
+let $nombre := $a/description
+return 
+<juego>{data($nombre)}</juego>
+	
+	-> Así devuelve etiquetas XML, crea la etiqueta juego y dentro de ello copia el contenido
+
+for $a in //arcade
+let $antigüedad := 2025 - number($a/year)
+where $antigüedad > 50
+let $nombre := $a/description
+return 
+<juego años="{$antigüedad}">
+  {data($nombre)}
+</juego>
+
+	-> Devuelve lo mismo que antes pero con atributo de lo antiguo que es un juego
+
+<juegos>
+{
+  for $a in //arcade
+  let $antigüedad := 2025 - number($a/year)
+  where $antigüedad > 50
+  let $nombre := $a/description
+  return 
+  <juego años="{$antigüedad}">
+    {data($nombre)}
+  </juego>  
+}
+</juegos>
+
+	-> Así devuelve un XML
