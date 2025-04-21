@@ -195,3 +195,6 @@ return
 </juegos>
 
 	-> Así devuelve un XML
+
+
+****BUENA PRÁCTICA	-> intentar que todo lo que se saca en el return sean variables, no funciones. El return mientras más simple sea mejor
