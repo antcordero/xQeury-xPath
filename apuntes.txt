@@ -50,13 +50,15 @@ también funciona con and
 en xquery si puede ir así //pokemon[//tipo="Grass"]
 
 en el IDE xPath arriba, xQuery abajo
-
+xPath solo selecciona, no modifica ni crea. xQuery sí lo hace y devuelve el resultado en el return
 
 /************************************************************************/
 				21/04/25
 /************************************************************************/
 
 xQquery está basado en un acrónimo FLWOR (For Let Where Order Return)
+
+- FOR:
 
 Consulta básica:
 
@@ -66,4 +68,95 @@ return $arcade
  -> itera cada elemento arcade de la lista (//arcade) y por cada elemento arcade que encuentra se lo asigna a la variable y lo devuelve, $arcade es el nombre para una variable, se puede llamar con otro nombre
  -> funciona como un for normal de programación
 
+for $a in //arcade
+return $a/description
+
+ -> así devuelve el elemento description que hay en cada variable $a, al estar en el for las devuelve todas.
+
+***En una consulta xQuery debe haber siempre un return
+
+
+- LET:
+
+let $a := //arcade/description
+return $a
+
+ -> Devuelve lo mismo que en el for, pero no se itera. Muestra directamente la lista, a la variable le asigna la description de cada elemento de la lista. Luego imprime todos los elementos description. 
+
+	-> Devuelven lo mismo, pero en el let la variable tiene 4238 valores, en cambio en el for la variable solo tiene un valor y cambia en cada iteración.
+
+for $a in //arcade
+let $nombre := $a/description
+return $nombre
+
+for $a in //arcade
+let $nombre := $a/description
+let $salida := concat(" -> ", $nombre, " - ")
+return $salida
+
+	->Concat solo devuelve contenido (texto)
+	-> Así devuelve texto
+
+for $a in //arcade
+let $nombre := $a/description
+let $salida := concat(" -> ", $nombre, " - ")
+return $nombre
+
+	-> Así devuelve los elementos description del XML más su contenido, la diferencia está en qué devuelve
+
+for $a in //arcade
+where $a/year = "1974"
+let $nombre := $a/description
+return $nombre
+
+	-> Devuelve los elementos description del XML que sean de ese año
+
+for $a in //arcade
+where $a/year = 1974
+let $nombre := $a/description
+return $nombre
+
+	-> Así está bien sintácticamente pero en alguno de los elementos hay alguno que no es un número y da error (Mensaje de error en la consola de la derecha), no lo coge como número sino que debe coger los datos como string, por eso las comillas. Va iterando cada elemento, en el momento que se encuentra un dato que es distinto al tipo de la consulta salta el error ya que xQuery no puede convertir solo
+
+	-> Solución: casting
+
+for $a in //arcade
+where number($a/year) = 1974
+let $nombre := $a/description
+return $nombre
+
+	-> Cuando tenemos una condición en la que buscamos por un número lo mejor es castearlo para evitar errores
+
+for $a in //arcade
+where ( number($a/year) > 1974 and number($a/year) < 1976 )
+let $nombre := $a
+return $nombre
+
+	-> dentro del where podemos tener variables de todo tipo
+
+for $a in //arcade
+let $año := number($a/year)
+where ($año > 1974 and $año < 1976)
+let $nombre := $a
+return $nombre
+
+for $a in //arcade
+let $atigüedad := 2025 - number($a/year)
+where $atigüedad > 50
+let $nombre := $a
+return $nombre
+
+
+for $a in //arcade
+let $atigüedad := 2025 - number($a/year)
+where $atigüedad > 50
+let $nombre := $a/description
+return $nombre
+	-> esto devuleve el elemento, para devolver el contenido solamente se usa data, no $nombre/text() que es una función tipo pipe
+
+for $a in //arcade
+let $atigüedad := 2025 - number($a/year)
+where $atigüedad > 50
+let $nombre := $a/description
+return data($nombre)
 
