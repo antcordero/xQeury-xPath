@@ -1,3 +1,7 @@
+/************************************************************************/
+				07/04/25
+/************************************************************************/
+
 base X no sirve para montar base de datos.
 Utilizamos xQuery como base de datos.
 
@@ -44,3 +48,22 @@ también funciona con and
 //pokemon[/tipos/tipo="Grass"]
 
 en xquery si puede ir así //pokemon[//tipo="Grass"]
+
+en el IDE xPath arriba, xQuery abajo
+
+
+/************************************************************************/
+				21/04/25
+/************************************************************************/
+
+xQquery está basado en un acrónimo FLWOR (For Let Where Order Return)
+
+Consulta básica:
+
+for $arcade in //arcade
+return $arcade
+
+ -> itera cada elemento arcade de la lista (//arcade) y por cada elemento arcade que encuentra se lo asigna a la variable y lo devuelve, $arcade es el nombre para una variable, se puede llamar con otro nombre
+ -> funciona como un for normal de programación
+
+
