@@ -37,5 +37,5 @@ let $juegos := (
   return $a
 )
 let $minimo := min($juegos/year)
-return $minimo
+return $juegos[number(year)=$minimo]
 
