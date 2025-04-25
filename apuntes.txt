@@ -200,3 +200,67 @@ return
 ****BUENA PRÁCTICA	
 	-> intentar que todo lo que se saca en el return sean variables, no funciones. El return mientras más simple sea mejor
 
+
+/************************************************************************/
+				25/04/25
+/************************************************************************/
+
+para listar elementos sin que se repitan:
+	distinct-values(//manufacturer) -> esto es xPath porque no hay returns ni for ni let, por tanto se ejecuta en la barra superior de BaseX
+esto es texto plano, para darlo como formato XML:
+	
+	for $m in distinct-values(//manufacturer)
+	order by $m
+	return <fabricante>{$m}</fabricante>
+
+	-> así sí que es xQuery, por lo que se puede ordenar, filtrar con el where, etc
+
+***Uso de funciones:
+
+-> upper-case:
+	for $m in distinct-values(//manufacturer)
+	order by $m
+	where $m!="-"
+	let $salida := upper-case($m)
+	return <fabricante>{$salida}</fabricante>
+
+
+
+-> tokenize(), depende del carácter separa la cadena y guarda sus elementos separados en un array. Funciona igual que el método .split() en Java.
+
+	let $juegos := (
+  		for $m in //manufacturer
+  		return tokenize($m," / ")
+	)
+
+	for $m in distinct-values($juegos)
+	order by $m
+	where $m!="-"
+	let $salida := upper-case($m)
+	return <fabricante>{$salida}</fabricante>
+
+Aquí se preparan los datos con el for para separar los fabricantes. Luego se listan por pantalla con un cambio de formato en el segundo for. Así se obtienen todos los fabricantes individualmente.
+
+
+
+***Ejemplo práctico:
+(:
+  Listado con los nombres de todos los juegos agrupados/agregados por fabricantes
+:)
+
+(: se esperaría esta salida por ejemplo 
+  
+  <fabricante nombre="SEGA">
+    <juego>...</juego>
+    <juego>...</juego>
+  </fabricante>  
+:)
+
+
+for $m in distinct-values(//manufacturer)
+order by $m
+where $m!="-"
+let $juegos := //arcade[manufacturer=$m]/name
+return <fabricante nombre="{$m}">{$juegos}</fabricante>
+
+
