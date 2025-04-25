@@ -32,7 +32,7 @@ return <fabricante>{$salida}</fabricante>
 :)
 
 (:
-  Listado con los nombres de todos los juegos agrupados/agregados por fabricantes
+  Listado con los nombres de todos los juegos agrupados/agregados 	por fabricantes
 :)
 
 (: se esperaría esta salida por ejemplo 
@@ -52,4 +52,6 @@ for $m in distinct-values(//manufacturer)
     for $j in $juegos
     return <juego>{data($j)}</juego>
   )
-  return <fabricante nombre="{$m}">{$juegos}</fabricante>
+  let $total := count($salida)
+  order by $total descending
+  return <fabricante nombre="{$m}" total="{$total}">{$juegos}</fabricante>
