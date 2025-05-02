@@ -68,4 +68,23 @@ return $disco
   Consulta 6: Devuelva todos los discos añadiendo el IVA al precio y convirtiendo el elemento país en atributo.
 :)
 
+for $disco in /catalogo/cd
+let $precioIva := number($disco/precio) * 1.21
+return
+  <cd pais="{$disco/pais}">
+    {$disco/titulo}
+    {$disco/artista}
+    {$disco/discografia}
+    {$disco/precio}
+    <precioConIva>{$precioIva}</precioConIva>
+    {$disco/año}
+  </cd>
+
+
+
+
+
+
+
+
 
