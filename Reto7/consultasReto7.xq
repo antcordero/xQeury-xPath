@@ -40,4 +40,32 @@ return <pais>{$e}</pais>
 (:
   Consulta 4: Devuelva el valor total de la colección en dólares y el valor promedio de todos los discos.
 :)
+(:
+let $precios := 
+  for $disco in /catalogo/cd
+  return number($disco/precio)
+let $total := sum($precios)
+let $media := avg($precios)
+return 
+  <resultado>
+    <total>{$total}</total>
+    <mediaPrecios moneda="$">{$media}</mediaPrecios>
+  </resultado>
+:)
+
+
+(:
+  Consulta 5: Devuelva solo los discos editados en USA
+:)
+(:
+for $disco in /catalogo/cd
+where $disco/pais = "USA"
+return $disco
+:)
+
+
+(:
+  Consulta 6: Devuelva todos los discos añadiendo el IVA al precio y convirtiendo el elemento país en atributo.
+:)
+
 
