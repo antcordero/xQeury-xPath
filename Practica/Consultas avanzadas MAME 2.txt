@@ -1,0 +1,101 @@
+(:
+Ejercicio 1.- Contar juegos por fabricante
+:)
+
+let $fabricantes := distinct-values(
+  for $m in //arcade/manufacturer
+  return tokenize($m,"/")
+)
+
+for $fabricante in $fabricantes
+  where not(contains($fabricante,"-"))
+  let $total := count(
+    for $a in //arcade
+    where contains($a/manufacturer,$fabricante)
+    return $a
+  )
+order by $total descending
+return <fabricante nombre="{$fabricante}" juegos="{$total}"></fabricante>
+
+
+(:
+Ejercicio 2.- juegos con estado incompleto. Devuelve su nombre y año en este formato:
+<juego nombre="A Day In Space" year="1987"/>
+<juego nombre="A. D. 2083" year="1983"/>
+:)
+
+for $juego in //arcade[driver_status="INCOMPLETO"]
+  let $nombre := $juego/name
+  let $año := $juego/year
+return <juego nombre="{data($nombre)}" year="{data($año)}"></juego>
+
+(:
+Ejercicio 3.- Agrupar juegos por orientacion. Devuelve los juegos agrupados por su display-orientation dentro de cada grupo incluye los nombres de los juegos:
+<orientacion tipo="VERTICAL">
+  <juego>ad2083</juego>
+  <juego>aceattac</juego>
+</orientacion>
+<orientacion tipo="HORIZONTAL">
+  <juego>abcop</juego>
+  <juego>ar_argh</juego>
+</orientacion>
+:)
+
+let $orientaciones := distinct-values(
+  for $juego in //arcade
+    where $juego/display_orientation != "-"
+    return $juego/display_orientation
+)
+
+for $orientacion in $orientaciones
+  let $juegos := (
+    for $juego in //arcade[display_orientation=$orientacion]
+    return <juego>{data($juego/name)}</juego>
+  )
+  let $total := count($juegos)
+return <orientacion tipo="{$orientacion}" total="{$total}">{$juegos}</orientacion>
+
+(:
+Ejercicio 4.- Año con mas lanzamientos. Devuelve el año en que se alnzaron mas videojuegos incluye tambien cuántos se lanzaron ese año
+ <max-lanzamientos año="1988" total="7"/>
+:)
+
+let $años := distinct-values(
+  for $juego in //arcade/year
+    where $juego != "-" and not(contains($juego,"?"))
+  return $juego
+)
+let $lanzamiento := (
+  for $año in $años
+  let $juegos := (
+    for $juego in //arcade[year=$año]
+    return $juego
+  )
+  let $total := count($juegos)
+  order by $total descending
+  return <lanzamiento año="{$año}" total="{$total}"></lanzamiento>
+)
+return $lanzamiento[1]
+
+(:
+Ejercicio 5.- Juegos con multiples fabricantes. Devuelve los juegos con mas de un manufacturer. Salida:
+<juego nombre="Magnet System" fabricante="EFO SA / Cedar"/>
+<juego nombre="A Day In Space" fabricante="EFO SA / Cedar"/>
+:)
+(:
+for $juego in //arcade
+  where contains($juego/manufacturer,"/")
+  let $nombre := $juego/name
+  let $fabricante := $juego/manufacturer
+return <juego nombre="{data($nombre)}" fabricante="{data($fabricante)}"></juego>
+:)
+let $fabricantes := distinct-values(
+  for $juego in //arcade/manufacturer
+    where contains($juego,"/")
+  return $juego
+)
+
+for $fabricante in $fabricantes
+  for $juego in //arcade[manufacturer=$fabricante]
+    let $nombre := $juego/name
+return <juego nombre="{data($nombre)}" fabricante="{data($fabricante)}"></juego>

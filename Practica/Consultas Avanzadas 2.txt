@@ -1,0 +1,143 @@
+(:
+Ejercicio 1.- Crea una consulta para obtener los todos los nombres de los modelos de coches que sean de fabricantes que hayan vendido más de 2 millones de unidades en total, y que devuelva este resultado:
+
+<fabricante ventas="13.5" nombre="Renault">
+ <modelo>12</modelo>
+ <modelo>5</modelo>
+ <modelo>R8</modelo>
+ <modelo>Espace</modelo>
+</fabricante>
+<fabricante ventas="5.7" nombre="SEAT">
+ <modelo>600</modelo>
+ <modelo>1400</modelo>
+ <modelo>127</modelo>
+ <modelo>Fura Crono</modelo>
+ <modelo>600</modelo>
+</fabricante>
+<fabricante ventas="3.9" nombre="Citroën">
+ <modelo>C15</modelo>
+ <modelo>GSA</modelo>
+</fabricante>
+<fabricante ventas="2.5" nombre="Citroen">
+ <modelo>GS</modelo>
+</fabricante>
+
+:)
+for $nombre in distinct-values(//fabricante)
+  let $coches := //coche[fabricante=$nombre]
+  let $totalVentas := sum($coches/ventas)
+  where $totalVentas > 2
+  let $modelos := (
+    for $a in $coches
+    return <modelo>{data($a/modelo)}</modelo>
+  )
+  order by $totalVentas descending
+ return <fabricante ventas="{$totalVentas}" nombre="{$nombre}">{$modelos}</fabricante>
+
+ (:
+Ejercicio 2.-  Crea una consulta que devuelva para cada uno de los 7 tipos de coche,toda la información del modelo más vendido, empezando por el de mayor venta, usando este formato:
+<top-ventas tipo="Familiar">
+ <coche decada="1970" tipo="Familiar">
+ <fabricante>Renault</fabricante>
+ <modelo>5</modelo>
+ <cilindrada>1.4</cilindrada>
+ <velocidad_maxima>155</velocidad_maxima>
+ <ventas>7.0</ventas>
+ <plazas>5</plazas>
+ </coche>
+</top-ventas>
+<top-ventas tipo="Deportivo">
+ <coche decada="1960" tipo="Deportivo">
+ <fabricante>SEAT</fabricante>
+ <modelo>600</modelo>
+ <cilindrada>0.6</cilindrada>
+ <velocidad_maxima>120</velocidad_maxima>
+ <ventas>2.7</ventas>
+ <plazas>4</plazas>
+ </coche>
+</top-ventas>
+:)
+
+for $tipo in distinct-values(//coche/@tipo)
+   let $coches := //coche[@tipo=$tipo]
+   let $top := (
+     for $a in $coches
+       order by $a/ventas descending
+     return $a
+   )
+   return <top-ventas tipo="{$tipo}">{$top[1]}</top-ventas>
+
+(:
+Ejercicio 3.- Crea una consulta que encuentre la década que tuvo más ventas totales de coches y 
+devuelva el listado de fabricantes que fabricaron coches en esa década, con este 
+formato:
+<decada total="16.759999999999998" decada="1970">
+ <fabricante>Citroen</fabricante>
+ <fabricante>SEAT</fabricante>
+ <fabricante>Renault</fabricante>
+ <fabricante>Seat</fabricante>
+ <fabricante>Renault</fabricante>
+ <fabricante>Citroën</fabricante>
+ <fabricante>Mercedes-Benz</fabricante>
+ <fabricante>Lamborghini</fabricante>
+</decada>
+(Pista: empieza obteniendo un listado con todas las décadas y sus fabricantes para luego 
+quedarte con la que tenga más ventas)
+:)
+
+let $decadas := distinct-values(//coche/@decada)
+let $ventasPorDecada := (
+  for $decada in $decadas
+  let $coches := //coche[@decada = $decada]
+  let $totalVentas := sum($coches/ventas)
+ return <decada total="{$totalVentas}" decada="{$decada}"></decada>
+)
+let $maxVentas := max($ventasPorDecada/@total)
+for $a in $ventasPorDecada
+  where $a/@total = $maxVentas
+  let $coches := //coche[@decada=$a/@decada]
+  let $fabricantes := (
+    for $b in $coches/fabricante
+  return $b
+)
+return <decada total="{$a/@total}" decada="{$a/@decada}">{$fabricantes}</decada>
+
+(:
+Ejercicio 4.- Crea una consulta que devuelva para cada tipo de coche la velocidad máxima media de todos los coches de ese tipo. Muestra el resultado en elementos <tipo> con el atributo nombre y velocidad_media, ordenados de mayor a menor velocidad media
+
+<tipo nombre="Deportivo" velocidad_media="245"/>
+<tipo nombre="Berlina" velocidad_media="195"/>
+:)
+
+let $tipos := distinct-values(//coche/@tipo)
+let $mediaPorTipo := (
+  for $tipo in $tipos
+    let $coches := //coche[@tipo=$tipo]
+    let $totalMedia := avg($coches/velocidad_maxima)
+    order by $totalMedia descending
+    return <tipo nombre="{$tipo}" velocidad_media="{round($totalMedia)}"></tipo>
+)
+return $mediaPorTipo
+
+(:
+Ejercicio 5.- Crea una consulta que devuelva, para cada década, el o los modelos que tienen el mayor número de plazas. Muestra el resultado en elementos <decada> con atributo valor, y dentro uno o más elementos <modelo> con nombre y plazas.
+
+<decada valor="1980">
+  <modelo plazas="7">Espace</modelo>
+</decada>
+<decada valor="1990">
+  <modelo plazas="7">Land Cruiser</modelo>
+</decada
+:)
+
+let $decadas := distinct-values(//coche/@decada)
+for $decada in $decadas
+  let $coches := //coche[@decada=$decada]
+  let $maxPlazas := max($coches/plazas)
+  let $modelos := $coches[plazas=$maxPlazas]
+ return <decada valor="{$decada}">
+   {
+     for $m in $modelos
+     return <modelo plazas="{$m/plazas}">{data($m/modelo)}</modelo>
+   }
+  </decada>

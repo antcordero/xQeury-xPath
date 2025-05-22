@@ -1,0 +1,146 @@
+(:
+Ejericcio 1.- Lista los nombres (<name>) de los videojuegos que tienen el estado del driver "BUONO", ordenado alfabeticamente
+:)
+
+for $arcade in //arcade
+  where $arcade/driver_status = "BUONO"
+  order by $arcade/name
+ return $arcade/name
+
+for $arcade in distinct-values(//arcade[driver_status = "BUONO"]/name)
+  order by $arcade
+ return <juego>{$arcade}</juego>
+
+
+(:
+Ejercicio 2.- Muestra los fabricantes (<manufacturer>) distintos presentes en el archivo
+:)
+
+for $fabricante in distinct-values(//arcade/manufacturer)
+return $fabricante
+
+(:
+Ejercicio 3.- Devuelve el año mas antiguo en el que se lanzó un videojuego
+:)
+
+let $años := (
+  for $a in //arcade/year
+  where number($a)
+  return $a
+)
+
+return min($años)
+
+(:
+Ejercicio 4.- Devuelve el listado con todos los videojuegos lanzados el año mas reciente en el que se lanzó un videojuego
+:)
+
+let $años := (
+  for $a in //arcade/year
+  where number($a)
+  return $a
+)
+
+let $año := max($años)
+ for $juego in //arcade
+   where number($juego/year) = $año
+ return $juego
+
+(:
+Ejercicio 5.- Muestra cuántos videojuegos tienen orientación "HORIZONTAL"
+:)
+
+let $resultado := (
+  for $juego in //arcade
+    where $juego/display_orientation = "HORIZONTAL"
+  return $juego
+)
+
+return count($resultado)
+
+(:
+Ejercicio 6.- Muestra un listado con todos los años que tuvieron algún juego, incluyendo como atributo la cantidad de juegos de ese año
+:)
+
+let $años := (
+  for $a in //arcade/year
+    where number($a)
+  return $a
+)
+
+let $años := distinct-values($años)
+
+for $año in $años
+  let $juegosAño := //arcade[year = $año]
+  let $cantidad := count($juegosAño)
+  order by $cantidad descending 
+ return <año total="{$cantidad}">{$año}</año>
+
+(:
+Ejercicio 7.- Devuelve los nombres y fabricante de los videojuegos cuya orientacion es "VERTICAL" y cuyo año es anterior a 1985
+:)
+
+for $juego in //arcade
+  where $juego/display_orientation = "VERTICAL"
+  and number($juego/year) < 1985
+return
+  <juego>
+    <nombre>{data($juego/name)}</nombre>
+    <fabricante>{data($juego/manufacturer)}</fabricante>
+  </juego>
+
+(:
+Ejercicio 8.- Muestra la cantidad de años en los que hubo algún videojuego de la empresa "Arcadia System"
+:)
+
+let $años := ( 
+  for $a in //arcade[manufacturer = "Arcadia Systems"]
+    let $y := $a/year
+    where number($y) = $y
+    return $y 
+)
+return count(distinct-values($años))
+
+(:
+Ejercicio 9.- Muestra el nombre de todos los videojuegos agrupados por fabricante
+:)
+
+for $a in distinct-values(//manufacturer)
+  where $a != "-"
+  let $juegos := //arcade[manufacturer=$a]/description
+  let $salida := (
+    for $j in $juegos
+    return <juego>{data($j)}</juego>
+  )
+return <fabricante nombre="{$a}">{$salida}</fabricante>
+
+(:
+Ejercicio 10.- Devuelve una lista de elementos <juego> donde el nombre (<name>) y el año (<year>) aparezcan como atributos, y el valor de <description> como contenido del elemento
+:)
+
+for $juego in //arcade
+  let $nombre := $juego/name
+  let $año := $juego/year
+  let $descripcion := $juego/description
+ return <juego nombre="{$nombre}" año="{$año}">{data($descripcion)}</juego>
+
+(:
+Ejercicio 11.- Crea elementos <arcade> en los que el fabricante (<manufacturer>)y el estado del driver (<driver_status>) aparezcan como atributos, y el nombre del juego ()<name>) como contenido
+:)
+ 
+ for $juego in //arcade
+   let $nombre := $juego/name
+   let $status := $juego/driver_status
+   let $fabricante := $juego/manufacturer
+  return <arcade fabricante="{$fabricante}" estado="{$status}">{data($nombre)}</arcade>
+
+(:
+Ejercicio 12.- Devuelve elementos <info> donde el tipo de pantalla (<display_type>) y la orientación (<display_orientation>) estén como atributos, y el nombre del juego como contenido
+:)
+
+for $juego in //arcade
+  let $nombre := $juego/name
+  let $pantalla := $juego/display_type
+  let $orientacion := $juego/display_orientation
+  where $pantalla != "-" and $orientacion != "-"
+ return <info pantalla="{$pantalla}" orientacion="{$orientacion}">{data($nombre)}</info>
