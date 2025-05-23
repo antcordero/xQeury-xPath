@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+  <game>
+    <name>Wii Sports</name>
+    <genre>Sports</genre>
+    <platform>Wii</platform>
+    <year>2006</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>82.74</global_sales>
+  </game>
+  <game>
+    <name>Super Mario Bros.</name>
+    <genre>Platform</genre>
+    <platform>NES</platform>
+    <year>1985</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>40.24</global_sales>
+  </game>
+  <game>
+    <name>Mario Kart Wii</name>
+    <genre>Racing</genre>
+    <platform>Wii</platform>
+    <year>2008</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>35.83</global_sales>
+  </game>
+  <game>
+    <name>Wii Sports Resort</name>
+    <genre>Sports</genre>
+    <platform>Wii</platform>
+    <year>2009</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>33.00</global_sales>
+  </game>
+  <game>
+    <name>Pokemon Red/Pokemon Blue</name>
+    <genre>Role-Playing</genre>
+    <platform>GB</platform>
+    <year>1996</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>31.38</global_sales>
+  </game>
+  <game>
+    <name>Tetris</name>
+    <genre>Puzzle</genre>
+    <platform>GB</platform>
+    <year>1989</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>30.26</global_sales>
+  </game>
+  <game>
+    <name>New Super Mario Bros.</name>
+    <genre>Platform</genre>
+    <platform>DS</platform>
+    <year>2006</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>30.01</global_sales>
+  </game>
+  <game>
+    <name>Wii Play</name>
+    <genre>Misc</genre>
+    <platform>Wii</platform>
+    <year>2006</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>29.01</global_sales>
+  </game>
+  <game>
+    <name>New Super Mario Bros. Wii</name>
+    <genre>Platform</genre>
+    <platform>Wii</platform>
+    <year>2009</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>28.61</global_sales>
+  </game>
+  <game>
+    <name>Duck Hunt</name>
+    <genre>Shooter</genre>
+    <platform>NES</platform>
+    <year>1984</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>28.31</global_sales>
+  </game>
+  <game>
+    <name>Nintendogs</name>
+    <genre>Simulation</genre>
+    <platform>DS</platform>
+    <year>2005</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>24.75</global_sales>
+  </game>
+  <game>
+    <name>Mario Kart DS</name>
+    <genre>Racing</genre>
+    <platform>DS</platform>
+    <year>2005</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>23.43</global_sales>
+  </game>
+  <game>
+    <name>Pokemon Gold/Pokemon Silver</name>
+    <genre>Role-Playing</genre>
+    <platform>GB</platform>
+    <year>1999</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>23.09</global_sales>
+  </game>
+  <game>
+    <name>Wii Fit</name>
+    <genre>Sports</genre>
+    <platform>Wii</platform>
+    <year>2007</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>22.72</global_sales>
+  </game>
+  <game>
+    <name>Wii Fit Plus</name>
+    <genre>Sports</genre>
+    <platform>Wii</platform>
+    <year>2009</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>22.00</global_sales>
+  </game>
+  <game>
+    <name>Kinect Adventures!</name>
+    <genre>Misc</genre>
+    <platform>X360</platform>
+    <year>2010</year>
+    <publisher>Microsoft Game Studios</publisher>
+    <global_sales>21.82</global_sales>
+  </game>
+  <game>
+    <name>Grand Theft Auto V</name>
+    <genre>Action</genre>
+    <platform>PS3</platform>
+    <year>2013</year>
+    <publisher>Take-Two Interactive</publisher>
+    <global_sales>21.39</global_sales>
+  </game>
+  <game>
+    <name>Grand Theft Auto: San Andreas</name>
+    <genre>Action</genre>
+    <platform>PS2</platform>
+    <year>2004</year>
+    <publisher>Take-Two Interactive</publisher>
+    <global_sales>20.81</global_sales>
+  </game>
+  <game>
+    <name>Super Mario World</name>
+    <genre>Platform</genre>
+    <platform>SNES</platform>
+    <year>1990</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>20.62</global_sales>
+  </game>
+  <game>
+    <name>Brain Age: Train Your Brain in Minutes a Day</name>
+    <genre>Misc</genre>
+    <platform>DS</platform>
+    <year>2005</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>20.22</global_sales>
+  </game>
+  <game>
+    <name>Pokemon Diamond/Pokemon Pearl</name>
+    <genre>Role-Playing</genre>
+    <platform>DS</platform>
+    <year>2006</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>18.35</global_sales>
+  </game>
+  <game>
+    <name>Super Mario Land</name>
+    <genre>Platform</genre>
+    <platform>GB</platform>
+    <year>1989</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>18.14</global_sales>
+  </game>
+  <game>
+    <name>Super Mario Bros. 3</name>
+    <genre>Platform</genre>
+    <platform>NES</platform>
+    <year>1988</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>17.28</global_sales>
+  </game>
+  <game>
+    <name>Grand Theft Auto V</name>
+    <genre>Action</genre>
+    <platform>X360</platform>
+    <year>2013</year>
+    <publisher>Take-Two Interactive</publisher>
+    <global_sales>16.38</global_sales>
+  </game>
+  <game>
+    <name>Grand Theft Auto: Vice City</name>
+    <genre>Action</genre>
+    <platform>PS2</platform>
+    <year>2002</year>
+    <publisher>Take-Two Interactive</publisher>
+    <global_sales>16.15</global_sales>
+  </game>
+  <game>
+    <name>Pokemon Ruby/Pokemon Sapphire</name>
+    <genre>Role-Playing</genre>
+    <platform>GBA</platform>
+    <year>2002</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>15.84</global_sales>
+  </game>
+  <game>
+    <name>Pokemon Black/Pokemon White</name>
+    <genre>Role-Playing</genre>
+    <platform>DS</platform>
+    <year>2010</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>15.32</global_sales>
+  </game>
+  <game>
+    <name>Brain Age 2: More Training in Minutes a Day</name>
+    <genre>Puzzle</genre>
+    <platform>DS</platform>
+    <year>2005</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>15.30</global_sales>
+  </game>
+  <game>
+    <name>Gran Turismo 3: A-Spec</name>
+    <genre>Racing</genre>
+    <platform>PS2</platform>
+    <year>2001</year>
+    <publisher>Sony Computer Entertainment</publisher>
+    <global_sales>14.97</global_sales>
+  </game>
+  <game>
+    <name>Call of Duty: Modern Warfare 3</name>
+    <genre>Shooter</genre>
+    <platform>X360</platform>
+    <year>2011</year>
+    <publisher>Activision</publisher>
+    <global_sales>14.76</global_sales>
+  </game>
+  <game>
+    <name>Pokémon Yellow: Special Pikachu Edition</name>
+    <genre>Role-Playing</genre>
+    <platform>GB</platform>
+    <year>1998</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>14.64</global_sales>
+  </game>
+  <game>
+    <name>Call of Duty: Black Ops</name>
+    <genre>Shooter</genre>
+    <platform>X360</platform>
+    <year>2010</year>
+    <publisher>Activision</publisher>
+    <global_sales>14.64</global_sales>
+  </game>
+  <game>
+    <name>Pokemon X/Pokemon Y</name>
+    <genre>Role-Playing</genre>
+    <platform>3DS</platform>
+    <year>2013</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>14.35</global_sales>
+  </game>
+  <game>
+    <name>Call of Duty: Black Ops 3</name>
+    <genre>Shooter</genre>
+    <platform>PS4</platform>
+    <year>2015</year>
+    <publisher>Activision</publisher>
+    <global_sales>14.24</global_sales>
+  </game>
+  <game>
+    <name>Call of Duty: Black Ops II</name>
+    <genre>Shooter</genre>
+    <platform>PS3</platform>
+    <year>2012</year>
+    <publisher>Activision</publisher>
+    <global_sales>14.04</global_sales>
+  </game>
+  <game>
+    <name>Call of Duty: Black Ops II</name>
+    <genre>Shooter</genre>
+    <platform>X360</platform>
+    <year>2012</year>
+    <publisher>Activision</publisher>
+    <global_sales>13.74</global_sales>
+  </game>
+  <game>
+    <name>Call of Duty: Modern Warfare 2</name>
+    <genre>Shooter</genre>
+    <platform>X360</platform>
+    <year>2009</year>
+    <publisher>Activision</publisher>
+    <global_sales>13.52</global_sales>
+  </game>
+  <game>
+    <name>Call of Duty: Modern Warfare 3</name>
+    <genre>Shooter</genre>
+    <platform>PS3</platform>
+    <year>2011</year>
+    <publisher>Activision</publisher>
+    <global_sales>13.47</global_sales>
+  </game>
+  <game>
+    <name>Grand Theft Auto III</name>
+    <genre>Action</genre>
+    <platform>PS2</platform>
+    <year>2001</year>
+    <publisher>Take-Two Interactive</publisher>
+    <global_sales>13.10</global_sales>
+  </game>
+  <game>
+    <name>Super Smash Bros. Brawl</name>
+    <genre>Fighting</genre>
+    <platform>Wii</platform>
+    <year>2008</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>13.04</global_sales>
+  </game>
+  <game>
+    <name>Call of Duty: Black Ops</name>
+    <genre>Shooter</genre>
+    <platform>PS3</platform>
+    <year>2010</year>
+    <publisher>Activision</publisher>
+    <global_sales>12.73</global_sales>
+  </game>
+  <game>
+    <name>Animal Crossing: Wild World</name>
+    <genre>Simulation</genre>
+    <platform>DS</platform>
+    <year>2005</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>12.28</global_sales>
+  </game>
+  <game>
+    <name>Mario Kart 7</name>
+    <genre>Racing</genre>
+    <platform>3DS</platform>
+    <year>2011</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>12.21</global_sales>
+  </game>
+  <game>
+    <name>Halo 3</name>
+    <genre>Shooter</genre>
+    <platform>X360</platform>
+    <year>2007</year>
+    <publisher>Microsoft Game Studios</publisher>
+    <global_sales>12.14</global_sales>
+  </game>
+  <game>
+    <name>Grand Theft Auto V</name>
+    <genre>Action</genre>
+    <platform>PS4</platform>
+    <year>2014</year>
+    <publisher>Take-Two Interactive</publisher>
+    <global_sales>11.99</global_sales>
+  </game>
+  <game>
+    <name>Pokemon HeartGold/Pokemon SoulSilver</name>
+    <genre>Action</genre>
+    <platform>DS</platform>
+    <year>2009</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>11.90</global_sales>
+  </game>
+  <game>
+    <name>Super Mario 64</name>
+    <genre>Platform</genre>
+    <platform>N64</platform>
+    <year>1996</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>11.90</global_sales>
+  </game>
+  <game>
+    <name>Gran Turismo 4</name>
+    <genre>Racing</genre>
+    <platform>PS2</platform>
+    <year>2004</year>
+    <publisher>Sony Computer Entertainment</publisher>
+    <global_sales>11.65</global_sales>
+  </game>
+  <game>
+    <name>Super Mario Galaxy</name>
+    <genre>Platform</genre>
+    <platform>Wii</platform>
+    <year>2007</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>11.52</global_sales>
+  </game>
+  <game>
+    <name>Pokemon Omega Ruby/Pokemon Alpha Sapphire</name>
+    <genre>Role-Playing</genre>
+    <platform>3DS</platform>
+    <year>2014</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>11.33</global_sales>
+  </game>
+  <game>
+    <name>Super Mario Land 2: 6 Golden Coins</name>
+    <genre>Adventure</genre>
+    <platform>GB</platform>
+    <year>1992</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>11.18</global_sales>
+  </game>
+  <game>
+    <name>Grand Theft Auto IV</name>
+    <genre>Action</genre>
+    <platform>X360</platform>
+    <year>2008</year>
+    <publisher>Take-Two Interactive</publisher>
+    <global_sales>11.03</global_sales>
+  </game>
+  <game>
+    <name>Gran Turismo</name>
+    <genre>Racing</genre>
+    <platform>PS</platform>
+    <year>1997</year>
+    <publisher>Sony Computer Entertainment</publisher>
+    <global_sales>10.95</global_sales>
+  </game>
+  <game>
+    <name>Super Mario 3D Land</name>
+    <genre>Platform</genre>
+    <platform>3DS</platform>
+    <year>2011</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>10.79</global_sales>
+  </game>
+  <game>
+    <name>Gran Turismo 5</name>
+    <genre>Racing</genre>
+    <platform>PS3</platform>
+    <year>2010</year>
+    <publisher>Sony Computer Entertainment</publisher>
+    <global_sales>10.77</global_sales>
+  </game>
+  <game>
+    <name>Call of Duty: Modern Warfare 2</name>
+    <genre>Shooter</genre>
+    <platform>PS3</platform>
+    <year>2009</year>
+    <publisher>Activision</publisher>
+    <global_sales>10.69</global_sales>
+  </game>
+  <game>
+    <name>Grand Theft Auto IV</name>
+    <genre>Action</genre>
+    <platform>PS3</platform>
+    <year>2008</year>
+    <publisher>Take-Two Interactive</publisher>
+    <global_sales>10.58</global_sales>
+  </game>
+  <game>
+    <name>Super Mario All-Stars</name>
+    <genre>Platform</genre>
+    <platform>SNES</platform>
+    <year>1993</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>10.55</global_sales>
+  </game>
+  <game>
+    <name>Pokemon FireRed/Pokemon LeafGreen</name>
+    <genre>Role-Playing</genre>
+    <platform>GBA</platform>
+    <year>2004</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>10.49</global_sales>
+  </game>
+  <game>
+    <name>Super Mario 64</name>
+    <genre>Platform</genre>
+    <platform>DS</platform>
+    <year>2004</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>10.42</global_sales>
+  </game>
+  <game>
+    <name>Just Dance 3</name>
+    <genre>Misc</genre>
+    <platform>Wii</platform>
+    <year>2011</year>
+    <publisher>Ubisoft</publisher>
+    <global_sales>10.27</global_sales>
+  </game>
+  <game>
+    <name>Call of Duty: Ghosts</name>
+    <genre>Shooter</genre>
+    <platform>X360</platform>
+    <year>2013</year>
+    <publisher>Activision</publisher>
+    <global_sales>10.21</global_sales>
+  </game>
+  <game>
+    <name>Halo: Reach</name>
+    <genre>Shooter</genre>
+    <platform>X360</platform>
+    <year>2010</year>
+    <publisher>Microsoft Game Studios</publisher>
+    <global_sales>9.87</global_sales>
+  </game>
+  <game>
+    <name>Mario Kart 64</name>
+    <genre>Racing</genre>
+    <platform>N64</platform>
+    <year>1996</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>9.87</global_sales>
+  </game>
+  <game>
+    <name>New Super Mario Bros. 2</name>
+    <genre>Platform</genre>
+    <platform>3DS</platform>
+    <year>2012</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>9.83</global_sales>
+  </game>
+  <game>
+    <name>Halo 4</name>
+    <genre>Shooter</genre>
+    <platform>X360</platform>
+    <year>2012</year>
+    <publisher>Microsoft Game Studios</publisher>
+    <global_sales>9.76</global_sales>
+  </game>
+  <game>
+    <name>Final Fantasy VII</name>
+    <genre>Role-Playing</genre>
+    <platform>PS</platform>
+    <year>1997</year>
+    <publisher>Sony Computer Entertainment</publisher>
+    <global_sales>9.72</global_sales>
+  </game>
+  <game>
+    <name>Call of Duty: Ghosts</name>
+    <genre>Shooter</genre>
+    <platform>PS3</platform>
+    <year>2013</year>
+    <publisher>Activision</publisher>
+    <global_sales>9.58</global_sales>
+  </game>
+  <game>
+    <name>Just Dance 2</name>
+    <genre>Misc</genre>
+    <platform>Wii</platform>
+    <year>2010</year>
+    <publisher>Ubisoft</publisher>
+    <global_sales>9.52</global_sales>
+  </game>
+  <game>
+    <name>Gran Turismo 2</name>
+    <genre>Racing</genre>
+    <platform>PS</platform>
+    <year>1999</year>
+    <publisher>Sony Computer Entertainment</publisher>
+    <global_sales>9.49</global_sales>
+  </game>
+  <game>
+    <name>Call of Duty 4: Modern Warfare</name>
+    <genre>Shooter</genre>
+    <platform>X360</platform>
+    <year>2007</year>
+    <publisher>Activision</publisher>
+    <global_sales>9.32</global_sales>
+  </game>
+  <game>
+    <name>Donkey Kong Country</name>
+    <genre>Platform</genre>
+    <platform>SNES</platform>
+    <year>1994</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>9.30</global_sales>
+  </game>
+  <game>
+    <name>Minecraft</name>
+    <genre>Misc</genre>
+    <platform>X360</platform>
+    <year>2013</year>
+    <publisher>Microsoft Game Studios</publisher>
+    <global_sales>9.20</global_sales>
+  </game>
+  <game>
+    <name>Animal Crossing: New Leaf</name>
+    <genre>Simulation</genre>
+    <platform>3DS</platform>
+    <year>2012</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>9.10</global_sales>
+  </game>
+  <game>
+    <name>Mario Party DS</name>
+    <genre>Misc</genre>
+    <platform>DS</platform>
+    <year>2007</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>9.02</global_sales>
+  </game>
+  <game>
+    <name>The Elder Scrolls V: Skyrim</name>
+    <genre>Role-Playing</genre>
+    <platform>X360</platform>
+    <year>2011</year>
+    <publisher>Bethesda Softworks</publisher>
+    <global_sales>8.84</global_sales>
+  </game>
+  <game>
+    <name>Super Mario Kart</name>
+    <genre>Racing</genre>
+    <platform>SNES</platform>
+    <year>1992</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>8.77</global_sales>
+  </game>
+  <game>
+    <name>Wii Party</name>
+    <genre>Misc</genre>
+    <platform>Wii</platform>
+    <year>2010</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>8.49</global_sales>
+  </game>
+  <game>
+    <name>FIFA 16</name>
+    <genre>Sports</genre>
+    <platform>PS4</platform>
+    <year>2015</year>
+    <publisher>Electronic Arts</publisher>
+    <global_sales>8.49</global_sales>
+  </game>
+  <game>
+    <name>Halo 2</name>
+    <genre>Shooter</genre>
+    <platform>XB</platform>
+    <year>2004</year>
+    <publisher>Microsoft Game Studios</publisher>
+    <global_sales>8.48</global_sales>
+  </game>
+  <game>
+    <name>Mario Party 8</name>
+    <genre>Misc</genre>
+    <platform>Wii</platform>
+    <year>2007</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>8.42</global_sales>
+  </game>
+  <game>
+    <name>Pokemon Black 2/Pokemon White 2</name>
+    <genre>Role-Playing</genre>
+    <platform>DS</platform>
+    <year>2012</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>8.34</global_sales>
+  </game>
+  <game>
+    <name>FIFA Soccer 13</name>
+    <genre>Action</genre>
+    <platform>PS3</platform>
+    <year>2012</year>
+    <publisher>Electronic Arts</publisher>
+    <global_sales>8.25</global_sales>
+  </game>
+  <game>
+    <name>The Sims 3</name>
+    <genre>Simulation</genre>
+    <platform>PC</platform>
+    <year>2009</year>
+    <publisher>Electronic Arts</publisher>
+    <global_sales>8.11</global_sales>
+  </game>
+  <game>
+    <name>GoldenEye 007</name>
+    <genre>Shooter</genre>
+    <platform>N64</platform>
+    <year>1997</year>
+    <publisher>Nintendo</publisher>
+    <global_sales>8.09</global_sales>
+  </game>
+</list>
